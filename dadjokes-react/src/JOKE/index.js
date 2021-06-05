@@ -6,7 +6,7 @@ export const Joke = ({ userAvatar, userName, text, likes, dislikes }) => {
   const [upLikes, setUpLikes] = useState(likes);
 
   return (
-    <div className="joke">
+    <div className="joke joke--not-funny">
       <div className="joke__body">
         <div className="joke__user">
           <img className="user-avatar" src={userAvatar} />
@@ -16,17 +16,15 @@ export const Joke = ({ userAvatar, userName, text, likes, dislikes }) => {
       </div>
       <div className="joke__likes">
         <button
-          id="btn-up"
           className="btn-like btn-like--up"
           onClick={() => setUpLikes(upLikes + 1)}
         ></button>
-        <span className="likes-count likes-count--up">{likes}</span>
+        <span className="likes-count likes-count--up">{upLikes}</span>
         <button
-          id="btn-down"
           className="btn-like btn-like--down"
           onClick={() => setDownLikes(downLikes + 1)}
         ></button>
-        <span className="likes-count likes-count--down">{dislikes}</span>
+        <span className="likes-count likes-count--down">{downLikes}</span>
       </div>
     </div>
   );

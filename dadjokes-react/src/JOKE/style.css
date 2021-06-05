@@ -66,11 +66,11 @@
 }
 
 .btn-like--up {
-  background-color: #00e268;
+  background-color: #36e487;
   background-image: url('img/like-up.png');
 }
 
 .btn-like--down {
-  background-color: #ff5654;
+  background-color: #f15b74;
   background-image: url('img/like-down.png');
 }
