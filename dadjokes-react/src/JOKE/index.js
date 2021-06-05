@@ -4,9 +4,10 @@ import './style.css';
 export const Joke = ({ userAvatar, userName, text, likes, dislikes }) => {
   const [downLikes, setDownLikes] = useState(dislikes);
   const [upLikes, setUpLikes] = useState(likes);
+  const jokeClass = likes < dislikes ? 'joke--not-funny' : 'joke';
 
   return (
-    <div className="joke joke--not-funny">
+    <div className={jokeClass}>
       <div className="joke__body">
         <div className="joke__user">
           <img className="user-avatar" src={userAvatar} />

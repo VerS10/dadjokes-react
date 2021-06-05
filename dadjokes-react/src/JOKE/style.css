@@ -74,3 +74,6 @@
   background-color: #f15b74;
   background-image: url('img/like-down.png');
 }
+.joke--not-funny {
+  opacity: 0.5;
+}
